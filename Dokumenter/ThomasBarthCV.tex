@@ -1,0 +1,233 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Thomas Barth} \\ \vspace{1pt}
+    \small 0047 484 56 975 $|$ \href{mailto:x@x.com}{\underline{Thomasbarth@live.no}} $|$ 
+    \href{https://www.linkedin.com/in/thomas-barth-a57052283/}{\underline{linkedin.com/in/thomas-barth-a57052283/}} $|$
+    \href{https://github.com/ELmustasje}{\underline{github.com/ELmustasje}}
+    \href{https://www.thomasbarth.no/}{\underline{thomasbarth.no}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University Of Bergen}{Bergen, NO}
+      {Bachelor of Science in Computer Science, GPA: 4.5 (A = 5)}{Aug. 2023 -- Jun 2026}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Intern - Software Development}{Jun 2025 -- Aug 2025}
+      {KLP Teknologi}{Oslo, NO}
+      \resumeItemListStart
+        \resumeItem{Full-stack development with Java (backend) and React (frontend) on a pension case management system}
+        \resumeItem{Delivered 30+ improvements to production in an Agile development environment, enhancing efficiency for users and customers with my team}
+        \resumeItem{Demonstrated quick adaptability, proactivity, and strong problem-solving skills}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Teaching Assistant}{Sep. 2024 -- Present}
+      {University Of Bergen}{Bergen, NO}
+      \resumeItemListStart
+        \resumeItem{My third straight semester working as a Teaching Assistant}
+        \resumeItem{Currently working with the Data structures and algorithms course (DSA)}
+        \resumeItem{Assisted in research comparing teaching methods at UiB with other universities}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------Volunteer Experience-----------
+\section{Volunteer Experience}
+  \resumeSubHeadingListStart
+ \resumeSubheading
+      {Board Member}{Sep 2024 -- Jun 2025}
+      {FriByte}{Bergen, NO}
+      \resumeItemListStart
+        \resumeItem{Contributed to FriByte, a non-profit student organization developing and managing secure IT systems for cultural organizations, student media, and political student groups in Bergen}
+      \resumeItemListEnd
+    
+    \resumeSubheading
+      {Board Member}{Nov 2024 -- Present}
+      {BSI Golf}{Bergen, NO}
+      \resumeItemListStart
+         \resumeItem{Maintained and improved IT-systems (website, payment, training sign-ups) ensuring smooth operations}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Featured Projects}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+    {\textbf{CV-to-Portfolio Site Converter} $|$ \emph{Python, React, TypeScript, HuggingFace LLM}}{Sep 2025}
+    \resumeItemListStart
+      \resumeItem{Transforms a user's CV PDF into a personalized developer portfolio website using LLM-assisted parsing.}
+      \resumeItem{Generates editable JSON to populate a React/TSX frontend, enabling rapid prototyping and customization.}
+      \resumeItem{Supports deployment and manual customization for enhanced user control.}
+    \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{SharedShopping} $|$ \emph{Go, JWT, REST, MySQL, TSX}}{Aug 2025}
+          \resumeItemListStart
+            \resumeItem{Designed and developed a REST API in Go, integrated with React frontend for real-time collaborative shopping lists}
+            \resumeItem{Collaborative shopping list web application where multiple users can create, manage, and share shopping lists in real-time}
+            \resumeItem{Implemented JWT-based authentication and secure sharing links, ensuring privacy and controlled list access}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Studentskatt.no} $|$ \emph{TSX, NodeJS, Vercel, Financial research}}{Dec 2024}
+          \resumeItemListStart
+            \resumeItem{Deployed website on Vercel cloud platform, ensuring scalable access for students across Norway}
+            \resumeItem{Centralized official resources into an accessible format, improving financial awareness among students}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+ \resumeSubHeadingListStart
+ \resumeItemListStart
+    \resumeItem{Winner, Labyrinten UiB programming contest (team-based university competition)}
+    \resumeItem{Gold medalist and 2x Junior National Champion, National Team Championships in badminton.}
+ \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Go, Java, Python, C/C++, JavaScript/Typescript, Rust, Haskell} \\
+     \textbf{Frameworks}{: React, Node.js, JUnit, Spring} \\
+     \textbf{Developer Tools}{: Git, Docker, Maven, Jenkins (CI/CD), Kafka} \\
+     \textbf{Theory}{: Advanced generics and variance, Database theory, Concurrent Programming}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
