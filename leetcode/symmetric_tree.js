@@ -24,6 +24,5 @@ var isSymmetric = function(root) {
     q.push([l.right, r.left]);
   }
   return true;
-
 };
 
